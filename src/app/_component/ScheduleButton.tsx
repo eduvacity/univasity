@@ -43,7 +43,7 @@ const BookACall: React.FC<ButtonProps> = ({
         </Button>
       </DrawerTrigger>
       <DrawerOverlay />
-      <DrawerContent className="max-w-screen h-screen min-h-screen shadow-none rounded-none bg-transparent border-0">
+      <DrawerContent className="max-w-screen h-screen min-h-screen shadow-none rounded-none border-0">
         <DialogTitle className="sr-only"> Book a call</DialogTitle>
 
         <DialogClose className="absolute right-2 top-2 sm:right-4 sm:top-4 z-50 bg-black/50 hover:bg-black/70 p-2 rounded-full transition-all">

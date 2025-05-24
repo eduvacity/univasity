@@ -43,7 +43,7 @@ export default function UnivasityFeatures() {
   return (
     <div
       id="features"
-      className="w-full container mx-auto xl:w-[951px] flex flex-col gap-[60px]"
+      className="w-full 2xl:container mx-auto flex flex-col gap-[60px]"
     >
       <div className="w-full flex justify-center items-center">
         <div className="w-full lg:w-[560px] flex flex-col gap-3">
@@ -72,13 +72,14 @@ export default function UnivasityFeatures() {
         </div>
       </div>
       {/* Feature image */}
-      <div className="w-full 2xl:w-[1087px] h-full xl:h-[772.98px] rounded-[22px] overflow-hidden z-10 -mt-20 xl:-mt-[60px] px-4 xl:px-0 ">
+      <div className="w-full 2xl:mx-auto 2xl:w-[1087px] 3xl:w-[1280px] h-full  xl:h-[572.98px] 2xl:h-[580.98px] 3xl:h-[772.98px] rounded-[22px] overflow-hidden z-10 -mt-20 xl:-mt-[60px] px-4 xl:px-0 ">
         <Image
-          src="/images/feature-image.webp"
-          alt="Feature image"
+          src="/videos/feature.gif"
+          alt="Feature gif"
           width={1087}
           height={772.98}
           priority
+          unoptimized
           className="w-full h-full rounded-[22px]"
         />
       </div>

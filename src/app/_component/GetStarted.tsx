@@ -3,7 +3,7 @@ import BookACall from "./ScheduleButton"
 
 export default function GetStarted() {
   return (
-    <div className="w-full container mx-auto sm:w-[270.08px] md:w-full lg:w-[560px] xl:w-[951px] flex flex-col gap-[60px] py-20 xl:py-28">
+    <div className="w-full container mx-auto sm:w-[270.08px] md:w-full lg:w-[560px] xl:w-[951px] flex flex-col gap-[60px] py-20 xl:py-28 px-4 lg:px-0">
       <div className="w-full flex justify-center items-center">
         <div className="w-full lg:w-[588px] flex flex-col gap-8">
           <div className="flex flex-col gap-3">

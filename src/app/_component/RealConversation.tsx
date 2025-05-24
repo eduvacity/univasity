@@ -11,11 +11,11 @@ export default function RealLifeConversationSection() {
           <div className="w-full xl:w-1/2 lg:px-4 2xl:px-0 relative">
             <div className="rounded-[16px] overflow-hidden">
               <Image
-                src="/images/realtime-convo.webp"
+                src="/videos/realtime-convo.gif"
                 alt="Student learning online"
-                width={500}
-                height={350}
-                className="w-full h-[384px] xl:h-auto object-cover"
+                width={700}
+                height={500}
+                className="w-full h-[384px] xl:h-[450px] object-cover"
               />
             </div>
           </div>

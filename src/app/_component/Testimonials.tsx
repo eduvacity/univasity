@@ -48,45 +48,47 @@ export default function TestimonialsSection() {
   return (
     <div
       id="why-univasity"
-      className="w-full container mx-auto flex flex-col gap-[60px]  px-4 xl:pl-[166px] pb-20 xl:pb-28"
+      className="w-full container mx-auto flex flex-col gap-[60px] pb-20 xl:pb-28"
     >
-      <div className="flex flex-col gap-3">
-        <h2 className="font-manrope font-semibold text-2xl xl:text-5xl leading-[130%] tracking-normal text-left text-[#E5E5E5]">
-          Voices that matter
-        </h2>
-        <p className="font-outfit font-normal text-sm xl:text-base leading-[125%] tracking-normal text-white">
-          What educators and students are saying
-        </p>
-      </div>
-      <div className="relative">
-        <div className="overflow-hidden" ref={emblaRef}>
-          <div className="flex">
-            {testimonials.map((testimony, index) => (
-              <div
-                key={index}
-                className="flex-[0_0_100%] min-w-0 md:flex-[0_0_85%] lg:flex-[0_0_45%] xl:flex-[0_0_30%] lg:pl-2 xl:pl-4 first:pl-0"
-              >
-                <div className="h-full flex flex-col gap-6 rounded-[24px] border-[0.5px] border-[#262626] bg-[#0A0A0A] p-6 md:p-8">
-                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-full flex justify-center items-center">
-                    <Image
-                      src={
-                        testimony.img || "/placeholder.svg?height=80&width=80"
-                      }
-                      alt={`${testimony.name} testimonial`}
-                      width={80}
-                      height={80}
-                      className="w-full h-full object-cover object-top rounded-full"
-                    />
+      <div className="w-full px-4 xl:pl-[80px] 2xl:pl-[90px] 3xl:pl-[166px]">
+        <div className="flex flex-col gap-3">
+          <h2 className="font-manrope font-semibold text-2xl xl:text-5xl leading-[130%] tracking-normal text-left text-[#E5E5E5]">
+            Voices that matter
+          </h2>
+          <p className="font-outfit font-normal text-sm xl:text-base leading-[125%] tracking-normal text-white">
+            What educators and students are saying
+          </p>
+        </div>
+        <div className="w-full relative">
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="flex">
+              {testimonials.map((testimony, index) => (
+                <div
+                  key={index}
+                  className="flex-[0_0_100%] min-w-0 md:flex-[0_0_85%] lg:flex-[0_0_45%] 2xl:flex-[0_0_30%] lg:pl-2 xl:pl-4 first:pl-0"
+                >
+                  <div className="h-full flex flex-col gap-6 rounded-[24px] border-[0.5px] border-[#262626] bg-[#0A0A0A] p-6 md:p-8">
+                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-full flex justify-center items-center">
+                      <Image
+                        src={
+                          testimony.img || "/placeholder.svg?height=80&width=80"
+                        }
+                        alt={`${testimony.name} testimonial`}
+                        width={80}
+                        height={80}
+                        className="w-full h-full object-cover object-top rounded-full"
+                      />
+                    </div>
+                    <p className="font-manrope font-normal text-[16px]/[150%] tracking-normal text-[#E5E5E5] flex-grow">
+                      {testimony.text}
+                    </p>
+                    <h4 className="font-manrope font-bold text-[14px] md:text-[16px]/[130%] tracking-normal text-[#A0C2B5]">
+                      — {testimony.name}
+                    </h4>
                   </div>
-                  <p className="font-manrope font-normal text-[16px]/[150%] tracking-normal text-[#E5E5E5] flex-grow">
-                    {testimony.text}
-                  </p>
-                  <h4 className="font-manrope font-bold text-[14px] md:text-[16px]/[130%] tracking-normal text-[#A0C2B5]">
-                    — {testimony.name}
-                  </h4>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
