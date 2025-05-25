@@ -24,7 +24,7 @@ export default function WhyChange() {
   return (
     <div
       id="why-univasity"
-      className="w-full container mx-auto sm:w-[270.08px] xl:w-[951px] flex flex-col gap-[60px] py-20 xl:py-28"
+      className="w-full container mx-auto slg:w-full xl:w-[951px] flex flex-col gap-[60px] py-20 xl:py-28"
     >
       <div className="flex flex-col gap-3">
         <h2 className="font-manrope font-semibold text-2xl xl:text-5xl leading-[130%] tracking-normal text-center text-[#E5E5E5]">
@@ -34,7 +34,7 @@ export default function WhyChange() {
           Your students have changed, your learning experience should too.
         </p>
       </div>
-      <div className="w-full xl:w-[951px] grid grid-cols-1 xl:grid-cols-3 gap-[60px]">
+      <div className="w-full xl:w-[951px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[60px]">
         {reasons?.map((reason, index) => (
           <div
             key={index}
